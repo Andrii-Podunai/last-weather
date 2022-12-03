@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./store";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,8 +12,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <Provider store={store}>
-    <Router basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
-    </Router>
+    </BrowserRouter>
   </Provider>
 );
