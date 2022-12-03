@@ -19,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route index path="/" element={<InputWeather />}></Route>
-        <Route index path="/:id" element={<CardInfo />}></Route>
+        <Route path="/" element={<InputWeather />}></Route>
+        <Route path="/:id" element={<CardInfo />}></Route>
       </Routes>
     </div>
   );
